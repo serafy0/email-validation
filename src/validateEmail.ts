@@ -63,8 +63,6 @@ export const validateEmail = async (
     return res.status(200).json({ message: "Email is valid", mxRecords });
   } catch (error: any) {
     console.error(error);
-    error.status = 500;
-    // errorHandler(error as ApiError, req, res, next);
     next(error);
   }
 };

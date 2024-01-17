@@ -3,9 +3,8 @@ import helmet from "helmet";
 import { validateEmail } from "./validateEmail";
 import swaggerUi from "swagger-ui-express";
 import handleError from "./errorHandling/errorHandler";
-
-const fs = require("fs");
-const YAML = require("yaml");
+import fs from "fs";
+import YAML from "yaml";
 
 const swaggerYaml = fs.readFileSync("./swagger.yaml", "utf8");
 const swaggerDocument = YAML.parse(swaggerYaml);
@@ -32,6 +31,8 @@ app.use((err: any, req: Request, res: Response, next: NextFunction) => {
 
 app.listen(port, () => {
   console.info(
-    `💻 ${process.env.NODE_ENV} Server is running at localhost:${port}`
+    `💻 ${process.env.NODE_ENV || "development"} Server is running at localhost:${port}`
   );
 });
+
+export default app;
