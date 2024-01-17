@@ -12,7 +12,6 @@ paths:
         - Regex pattern matching
         - MX record lookup
         - Temporary email domain check
-        - Limited email server connectivity check
       requestBody:
         required: true
         content:
