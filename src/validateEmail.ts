@@ -54,7 +54,6 @@ export const validateEmail = async (
   const { email } = req.body;
 
   try {
-    // 1. Validate email with regex
     await checkTempDomains(email);
 
     await validateRegex(email);
