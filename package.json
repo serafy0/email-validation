@@ -5,8 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "jest",
+    "build": "tsc",
     "dev": "ts-node-dev src/server.ts",
-    "start": "node dist/server.js"
+    "start": "node dist/src/server.js"
   },
   "keywords": [],
   "author": "",
