@@ -2,7 +2,7 @@
 
 ## what it does
 
-- look up MX record us
+- look up MX record
 - checks if the domain name is a temporary domain address from this [list](https://github.com/disposable/disposable)
 
 ## how to run locally
@@ -19,4 +19,4 @@ then you should be able to open http://localhost:3000/api-docs/
 
 ## demo
 
-https://email-validation-0v0l.onrender.com
+https://email-validation-0v0l.onrender.com/api-docs/
